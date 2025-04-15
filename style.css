@@ -38,3 +38,49 @@ footer {
   bottom: 0;
   width: 100%;
 }
+/* تنسيقات صفحة تسجيل الدخول */
+.login-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.login-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.3rem 0 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.login-container a {
+  color: #6a1b9a;
+  text-decoration: none;
+}
