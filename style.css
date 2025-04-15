@@ -1,10 +1,15 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #111;
+  background-image: url('images/bg.jpg'); /storge/emulated/0/DCIM/Facebook/FB_IMG_173362935717.ipg/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
   text-align: center;
   direction: rtl;
+
 }
 
 header {
