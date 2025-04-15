@@ -1,21 +1,26 @@
 {
-  "name": "أنتي | شبكة تواصل",
+  "name": "أنتي | شبكة تواصل اجتماعي",
   "short_name": "أنتي",
+  "description": "منصة تواصل اجتماعي تربطك بالعالم العربي بروح جديدة.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#1e1e1e",
   "theme_color": "#ff4081",
   "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl",
   "icons": [
     {
       "src": "images/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "images/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
