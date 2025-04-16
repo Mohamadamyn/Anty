@@ -5,33 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>أنـتـي | شبكة تواصل</title>
   <link rel="stylesheet" href="style.css" />
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#ff4081">
-
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff4081">
 </head>
 <body>
   <header>
-  <img src="images/logo512.png" alt="شعار أنتي" style="width: 100px; height: auto; margin-bottom: 10px;" />
-  <h1>أنـتـي</h1>
-  <p>منصة تواصل اجتماعي تربطك بالعالم</p>
-</header>
+    <img src="images/logo512.png" alt="شعار أنتي" style="width: 100px; height: auto; margin-bottom: 10px;" />
+    <h1>أنـتـي</h1>
+    <p>منصة تواصل اجتماعي تربطك بالعالم</p>
+  </header>
+
   <main>
     <section class="intro">
       <h2>مرحباً بك في أنـتـي</h2>
       <p>هنا تبدأ قصتك... تواصل، عبّر، وكن جزءًا من العالم.</p>
       <button onclick="alert('التسجيل قريباً')">سجّل الآن</button>
     </section>
+
+    <section class="features">
+      <h3>خيارات المستخدم</h3>
+      <button onclick="toggleDarkMode()">تفعيل/إيقاف الوضع الليلي</button>
+      <button onclick="toggleParentalControl()">التحكم الأبوي</button>
+      <button onclick="changeLanguage('en')">تغيير اللغة إلى الإنجليزية</button>
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 أنـتـي - جميع الحقوق محفوظة</p>
   </footer>
+
   <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-    .then(reg => console.log("Service Worker مسجّل"))
-    .catch(err => console.log("فشل تسجيل Service Worker", err));
-  }
-</script>
-<script src="main.js"></script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log("Service Worker مسجّل"))
+        .catch(err => console.log("فشل تسجيل Service Worker", err));
+    }
+  </script>
+  <script src="main.js"></script>
 </body>
 </html>
