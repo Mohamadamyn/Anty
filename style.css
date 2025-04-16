@@ -38,10 +38,15 @@ button:hover {
 
 footer {
   background-color: #1e1e1e;
-  padding: 1rem;
+  padding: 0.5rem; /* تقليل الحجم لتصغير الشريط */
   position: fixed;
   bottom: 0;
-  width: 100%;
+  right: 0; /* وضعه في الزاوية السفلية اليمنى */
+  font-size: 12px; /* تقليل حجم الخط */
+  color: white;
+  text-align: center;
+}
+
 }
 /* تنسيقات صفحة تسجيل الدخول */
 .login-page {
