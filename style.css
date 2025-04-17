@@ -1,96 +1,38 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('images/logo512.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #fff;
-  text-align: center;
-  direction: rtl;
+<body>
+  <div class="page-wrapper">
+    <header>
+      <img src="images/logo512.png" alt="شعار أنتي" style="width: 100px; height: auto; margin-bottom: 10px;" />
+      <h1>أنـتـي</h1>
+      <p>منصة تواصل اجتماعي تربطك بالعالم</p>
+    </header>
 
-}
+    <main>
+      <section class="intro">
+        <h2>مرحباً بك في أنـتـي</h2>
+        <p>هنا تبدأ قصتك... تواصل، عبّر، وكن جزءًا من العالم.</p>
+        <button onclick="alert('التسجيل قريباً')">سجّل الآن</button>
+      </section>
 
-header {
-  background-color: #1e1e1e;
-  padding: 2rem 1rem;
-}
+      <section class="features">
+        <h3>خيارات المستخدم</h3>
+        <button onclick="toggleDarkMode()">تفعيل/إيقاف الوضع الليلي</button>
+        <button onclick="toggleParentalControl()">التحكم الأبوي</button>
+        <button onclick="changeLanguage('en')">تغيير اللغة إلى الإنجليزية</button>
+      </section>
+    </main>
 
-.intro {
-  margin: 4rem 1rem;
-}
+    <footer>
+      <p>&copy; 2025 أنـتـي - جميع الحقوق محفوظة</p>
+    </footer>
+  </div>
 
-button {
-  background-color: #ff4081;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #e73370;
-}
-
-footer {
-  background-color: #1e1e1e;
-  padding: 0.5rem; /* تقليل الحجم لتصغير الشريط */
-  position: fixed;
-  bottom: 0;
-  right: 0; /* وضعه في الزاوية السفلية اليمنى */
-  font-size: 12px; /* تقليل حجم الخط */
-  color: white;
-  text-align: center;
-
-
-}
-/* تنسيقات صفحة تسجيل الدخول */
-.login-page {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.login-container {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 300px;
-}
-
-.login-container h1 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.3rem 0 1rem 0;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-}
-
-.login-container button {
-  width: 100%;
-  padding: 0.6rem;
-  background-color: #6a1b9a;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.login-container a {
-  color: #6a1b9a;
-  text-decoration: none;
-}
+  <!-- سكربتات -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log("Service Worker مسجّل"))
+        .catch(err => console.log("فشل تسجيل Service Worker", err));
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
