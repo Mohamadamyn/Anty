@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #0d1b2a, #1b263b); /* خلفية كحلية بتدرج */
-  color: #5c3a21; /* بني */
-  text-align: center;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* كحلي مموج */
+  color: #4b2e2e; /* بني أنيق */
   direction: rtl;
+  text-align: center;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem 1rem;
   color: white;
 }
@@ -21,17 +21,22 @@ header img {
 
 main {
   padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }
 
 .intro,
 .features {
-  background-color: #6e6b5e; /* لون عفني */
-  margin: 2rem auto;
+  background-color: #f5f2eb; /* لون عفني ناعم ومرتب */
   padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 90%;
   max-width: 700px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
+  color: #4b2e2e;
 }
 
 button {
@@ -51,12 +56,59 @@ button:hover {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.7rem;
+  font-size: 12px;
+  color: white;
   position: fixed;
   bottom: 0;
   width: 100%;
-  font-size: 12px;
-  color: white;
+}
+.login-page {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #f5f2eb;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 320px;
+  box-sizing: border-box;
   text-align: center;
+  color: #4b2e2e;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.login-container button:hover {
+  background-color: #e73370;
+}
+
+.login-container a {
+  color: #6a1b9a;
+  text-decoration: none;
 }
