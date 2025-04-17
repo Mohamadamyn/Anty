@@ -1,36 +1,26 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #001f3f, #003366, #004080); /* كحلي مموج */
-  background-attachment: fixed;
+  background: linear-gradient(to bottom, #0d1b2a, #1b263b); /* خلفية كحلية بتدرج */
   color: #5c3a21; /* بني */
   text-align: center;
   direction: rtl;
-  position: relative;
-}
-
-body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/transparent-overlay.png'); /* صورة شفافة */
-  background-size: cover;
-  opacity: 0.3; /* الشفافية */
-  pointer-events: none; /* لا تؤثر على التفاعل مع الصفحة */
 }
 
 header {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 2rem 1rem;
-  color: #5c3a21; /* بني */
+  color: white;
 }
 
-header h1,
-header p {
-  color: #5c3a21; /* بني */
+header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 2rem 1rem;
 }
 
 .intro,
@@ -40,23 +30,20 @@ header p {
   padding: 2rem;
   border-radius: 1rem;
   max-width: 700px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.intro h2,
-.features h3,
-button {
-  color: #5c3a21; /* بني */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
 
 button {
   background-color: #ff4081;
+  color: white;
   border: none;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
+  margin: 0.5rem;
 }
 
 button:hover {
@@ -68,56 +55,8 @@ footer {
   padding: 0.5rem;
   position: fixed;
   bottom: 0;
-  right: 0;
+  width: 100%;
   font-size: 12px;
-  color: #5c3a21; /* بني */
-  text-align: center;
-}
-
-/* صفحة تسجيل الدخول */
-.login-page {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.login-container {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 300px;
-}
-
-.login-container h1 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: #5c3a21; /* بني */
-}
-
-.login-container input {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.3rem 0 1rem 0;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-}
-
-.login-container button {
-  width: 100%;
-  padding: 0.6rem;
-  background-color: #6a1b9a;
   color: white;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.login-container a {
-  color: #6a1b9a;
-  text-decoration: none;
+  text-align: center;
 }
